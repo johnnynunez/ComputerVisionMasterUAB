@@ -1,0 +1,10 @@
+text_query_set,gt_corresps_folder,dist,k,mapk_value,correct,total
+./results/text/pred_texts_greys_qsd1_w2/,../data/qsd1_w2/,hamming,1,0.4,12,30
+./results/text/pred_texts_greys_qsd1_w2/,../data/qsd1_w2/,hamming,3,0.4166666666666667,12,30
+./results/text/pred_texts_greys_qsd1_w2/,../data/qsd1_w2/,hamming,5,0.4166666666666667,12,30
+./results/text/pred_texts_greys_qsd1_w2/,../data/qsd1_w2/,levenshtein,1,0.7333333333333333,22,30
+./results/text/pred_texts_greys_qsd1_w2/,../data/qsd1_w2/,levenshtein,3,0.7444444444444444,22,30
+./results/text/pred_texts_greys_qsd1_w2/,../data/qsd1_w2/,levenshtein,5,0.7444444444444444,22,30
+./results/text/pred_texts_greys_qsd1_w2/,../data/qsd1_w2/,damerau_levenshtein,1,0.7333333333333333,22,30
+./results/text/pred_texts_greys_qsd1_w2/,../data/qsd1_w2/,damerau_levenshtein,3,0.7444444444444444,22,30
+./results/text/pred_texts_greys_qsd1_w2/,../data/qsd1_w2/,damerau_levenshtein,5,0.7444444444444444,22,30

@@ -1,0 +1,10 @@
+pred_folder,greys,binary,dist,dist_mean,dist_median
+./results/text/pred_texts_rgb_qsd1_w2/,False,False,hamming,37.63333333333333,38.0
+./results/text/pred_texts_rgb_qsd1_w2/,False,False,levenshtein,26.566666666666666,24.0
+./results/text/pred_texts_rgb_qsd1_w2/,False,False,damerau_levenshtein,26.566666666666666,24.0
+./results/text/pred_texts_greys_qsd1_w2/,True,False,hamming,37.46666666666667,38.0
+./results/text/pred_texts_greys_qsd1_w2/,True,False,levenshtein,25.766666666666666,24.0
+./results/text/pred_texts_greys_qsd1_w2/,True,False,damerau_levenshtein,25.766666666666666,24.0
+./results/text/pred_texts_binary_qsd1_w2/,False,True,hamming,37.7,38.0
+./results/text/pred_texts_binary_qsd1_w2/,False,True,levenshtein,25.766666666666666,24.0
+./results/text/pred_texts_binary_qsd1_w2/,False,True,damerau_levenshtein,25.766666666666666,24.0

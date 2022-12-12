@@ -1,0 +1,2 @@
+('Alfred Figueras', "La familia de l'artista")
+('Alfred Figueras', "Jardi d'Essai")

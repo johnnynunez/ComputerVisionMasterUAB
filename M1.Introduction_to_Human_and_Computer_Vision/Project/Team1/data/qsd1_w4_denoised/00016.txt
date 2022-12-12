@@ -1,0 +1,2 @@
+('Per Krohg', 'The Stroll')
+('Per Krohg', 'The Absinthe Drinker')

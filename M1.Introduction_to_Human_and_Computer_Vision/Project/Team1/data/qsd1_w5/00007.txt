@@ -1,0 +1,3 @@
+('Edvard Munch', 'Evening on Karl Johan')
+('Edvard Munch', 'Jealousy')
+('Edvard Munch', 'House in Moonlight')

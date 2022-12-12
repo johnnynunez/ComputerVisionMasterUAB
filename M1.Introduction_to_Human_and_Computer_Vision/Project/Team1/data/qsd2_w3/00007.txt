@@ -1,0 +1,2 @@
+('Alfred Figueras', 'Carrer de la Plateria')
+('Alfred Figueras', 'Noia al mirall')

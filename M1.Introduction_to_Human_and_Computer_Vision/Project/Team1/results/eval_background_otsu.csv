@@ -1,0 +1,3 @@
+Background method,Distance,K,MapK,correct,total
+otsu,hellinger_kernel,1,0.43333333333333335,13,30
+otsu,hellinger_kernel,5,0.4666666666666667,14,30

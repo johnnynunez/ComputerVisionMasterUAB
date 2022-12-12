@@ -1,0 +1,2 @@
+('Pablo Picasso', 'Woman in a Chair')
+('Pablo Picasso', 'Bull Fighting')

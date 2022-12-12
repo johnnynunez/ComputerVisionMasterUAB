@@ -1,0 +1,3 @@
+('Modest Cuixart', 'Simbolisme')
+('Joan Ponc', 'La lluita')
+('Joan Ponc', ' Instruments de tortura')
