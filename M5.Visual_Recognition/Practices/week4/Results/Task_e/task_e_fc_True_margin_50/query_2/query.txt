@@ -1,0 +1,1 @@
+Query Objects: bear neighbor_0 Objects: clock neighbor_1 Objects: bird neighbor_2 Objects: dog dog bed neighbor_3 Objects: clock neighbor_4 Objects: clock 

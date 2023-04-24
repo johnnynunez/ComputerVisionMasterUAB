@@ -1,0 +1,1 @@
+Query Objects: bicycle suitcase neighbor_0 Objects: dog dog dog dog bird person person neighbor_1 Objects: horse horse horse horse horse horse horse horse horse horse horse horse horse horse neighbor_2 Objects: person zebra neighbor_3 Objects: umbrella person person person neighbor_4 Objects: fire hydrant 

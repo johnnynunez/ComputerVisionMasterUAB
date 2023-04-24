@@ -1,0 +1,1 @@
+Query Objects: bear neighbor_0 Objects: sheep neighbor_1 Objects: bear bear neighbor_2 Objects: sheep sheep sheep sheep sheep sheep sheep neighbor_3 Objects: bear bear neighbor_4 Objects: bear bear 

@@ -1,0 +1,1 @@
+Query Objects: person banana neighbor_0 Objects: dining table person banana microwave bowl neighbor_1 Objects: car donut person person person traffic light traffic light traffic light person person car car person neighbor_2 Objects: banana person neighbor_3 Objects: donut chair person neighbor_4 Objects: cell phone person car 

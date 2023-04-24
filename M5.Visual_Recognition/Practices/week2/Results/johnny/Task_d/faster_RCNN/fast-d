@@ -1,0 +1,46 @@
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.573
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.794
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.648
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.403
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.675
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.680
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.198
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.673
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.684
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.536
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.776
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.920
+[03/19 20:43:45 d2.evaluation.coco_evaluation]: Evaluation results for bbox:
+|   AP   |  AP50  |  AP75  |  APs   |  APm   |  APl   |
+|:------:|:------:|:------:|:------:|:------:|:------:|
+| 57.250 | 79.367 | 64.828 | 40.280 | 67.471 | 67.966 |
+[03/19 20:43:45 d2.evaluation.coco_evaluation]: Per-category bbox AP:
+| category      | AP     | category       | AP   | category      | AP     |
+|:--------------|:-------|:---------------|:-----|:--------------|:-------|
+| person        | 44.939 | bicycle        | nan  | car           | 69.562 |
+| motorcycle    | nan    | bus            | nan  | truck         | nan    |
+| traffic light | nan    | stop sign      | nan  | parking meter | nan    |
+| bench         | nan    | bird           | nan  | cat           | nan    |
+| dog           | nan    | horse          | nan  | sheep         | nan    |
+| cow           | nan    | elephant       | nan  | bear          | nan    |
+| zebra         | nan    | giraffe        | nan  | backpack      | nan    |
+| umbrella      | nan    | handbag        | nan  | tie           | nan    |
+| suitcase      | nan    | frisbee        | nan  | skis          | nan    |
+| snowboard     | nan    | sports ball    | nan  | kite          | nan    |
+| baseball bat  | nan    | baseball glove | nan  | skateboard    | nan    |
+| surfboard     | nan    | tennis racket  | nan  | bottle        | nan    |
+| wine glass    | nan    | cup            | nan  | fork          | nan    |
+| knife         | nan    | spoon          | nan  | bowl          | nan    |
+| banana        | nan    | apple          | nan  | sandwich      | nan    |
+| orange        | nan    | broccoli       | nan  | carrot        | nan    |
+| hot dog       | nan    | pizza          | nan  | donut         | nan    |
+| cake          | nan    | chair          | nan  | couch         | nan    |
+| potted plant  | nan    | bed            | nan  | dining table  | nan    |
+| toilet        | nan    | tv             | nan  | laptop        | nan    |
+| mouse         | nan    | remote         | nan  | keyboard      | nan    |
+| cell phone    | nan    | microwave      | nan  | oven          | nan    |
+| toaster       | nan    | sink           | nan  | refrigerator  | nan    |
+| book          | nan    | clock          | nan  | vase          | nan    |
+| scissors      | nan    | teddy bear     | nan  | hair drier    | nan    |
+| toothbrush    | nan    |                |      |               |        |
+OrderedDict([('bbox', {'AP': 57.25032162109031, 'AP50': 79.36663794609449, 'AP75': 64.82803171095483, 'APs': 40.2800967365683, 'APm': 67.47132217828002, 'APl': 67.96570536739294, 'AP-person': 44.938694774892575, 'AP-bicycle': nan, 'AP-car': 69.56194846728803, 'AP-motorcycle': nan, 'AP-bus': nan, 'AP-truck': nan, 'AP-traffic light': nan, 'AP-stop sign': nan, 'AP-parking meter': nan, 'AP-bench': nan, 'AP-bird': nan, 'AP-cat': nan, 'AP-dog': nan, 'AP-horse': nan, 'AP-sheep': nan, 'AP-cow': nan, 'AP-elephant': nan, 'AP-bear': nan, 'AP-zebra': nan, 'AP-giraffe': nan, 'AP-backpack': nan, 'AP-umbrella': nan, 'AP-handbag': nan, 'AP-tie': nan, 'AP-suitcase': nan, 'AP-frisbee': nan, 'AP-skis': nan, 'AP-snowboard': nan, 'AP-sports ball': nan, 'AP-kite': nan, 'AP-baseball bat': nan, 'AP-baseball glove': nan, 'AP-skateboard': nan, 'AP-surfboard': nan, 'AP-tennis racket': nan, 'AP-bottle': nan, 'AP-wine glass': nan, 'AP-cup': nan, 'AP-fork': nan, 'AP-knife': nan, 'AP-spoon': nan, 'AP-bowl': nan, 'AP-banana': nan, 'AP-apple': nan, 'AP-sandwich': nan, 'AP-orange': nan, 'AP-broccoli': nan, 'AP-carrot': nan, 'AP-hot dog': nan, 'AP-pizza': nan, 'AP-donut': nan, 'AP-cake': nan, 'AP-chair': nan, 'AP-couch': nan, 'AP-potted plant': nan, 'AP-bed': nan, 'AP-dining table': nan, 'AP-toilet': nan, 'AP-tv': nan, 'AP-laptop': nan, 'AP-mouse': nan, 'AP-remote': nan, 'AP-keyboard': nan, 'AP-cell phone': nan, 'AP-microwave': nan, 'AP-oven': nan, 'AP-toaster': nan, 'AP-sink': nan, 'AP-refrigerator': nan, 'AP-book': nan, 'AP-clock': nan, 'AP-vase': nan, 'AP-scissors': nan, 'AP-teddy bear': nan, 'AP-hair drier': nan, 'AP-toothbrush': nan})])

@@ -1,0 +1,1 @@
+Query Objects: bicycle suitcase neighbor_0 Objects: car car car car bench neighbor_1 Objects: refrigerator car car person person car car car car car car car car car car neighbor_2 Objects: train bench neighbor_3 Objects: bench person person neighbor_4 Objects: car car car car fire hydrant person truck 

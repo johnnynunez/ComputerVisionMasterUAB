@@ -1,0 +1,1 @@
+Query Objects: bear neighbor_0 Objects: dog bench person neighbor_1 Objects: bear bear bear person truck neighbor_2 Objects: teddy bear neighbor_3 Objects: teddy bear teddy bear teddy bear teddy bear neighbor_4 Objects: bear bear 

@@ -1,0 +1,34 @@
+#!/bin/bash
+#SBATCH -n 4 # Number of cores
+#SBATCH --mem 60GB # 2GB solicitados.
+#SBATCH -p mhigh,mhigh # or mlow Partition to submit to master low prioriy queue
+#SBATCH --gres gpu:1 # Para pedir Pascales MAX 8
+#SBATCH -o %x_%u_%j.out # File to which STDOUT will be written
+#SBATCH -e %x_%u_%j.err # File to which STDERR will be written
+eval "$(conda shell.bash hook)"
+conda activate m5
+# commanda terminal --> sbatch --gres gpu:2 -n 10 job_fast
+python -u main_fast.py --task task_a --train True --sweep False --batch_size 64 --num_epochs 5 --network_text FastText --network_image RESNET50 --margin 0.1 
+python -u main_fast.py --task task_a --train True --sweep False --batch_size 64 --num_epochs 5 --network_text BERT --network_image RESNET50 --margin 0.1
+python -u main_fast.py --task task_b --train True --sweep False --batch_size 64 --num_epochs 1 --network_text FastText --network_image RESNET50 --margin 0.1 
+python -u main_fast.py --task task_b --train True --sweep False --batch_size 64 --num_epochs 1 --network_text BERT --network_image RESNET50 --margin 0.1 
+python -u main_fast.py --task task_a --train True --sweep False --batch_size 64 --num_epochs 5 --network_text FastText --network_image fasterRCNN --margin 0.1 
+python -u main_fast.py --task task_a --train True --sweep False --batch_size 64 --num_epochs 5 --network_text BERT --network_image fasterRCNN --margin 0.1 
+python -u main_fast.py --task task_b --train True --sweep False --batch_size 64 --num_epochs 1 --network_text FastText --network_image fasterRCNN --margin 0.1 
+python -u main_fast.py --task task_b --train True --sweep False --batch_size 64 --num_epochs 1 --network_text BERT --network_image fasterRCNN --margin 0.1 
+python -u main_fast.py --task task_a --train True --sweep False --batch_size 64 --num_epochs 5 --network_text FastText --network_image RESNET50 --margin 1 
+python -u main_fast.py --task task_a --train True --sweep False --batch_size 64 --num_epochs 5 --network_text BERT --network_image RESNET50 --margin 1 
+python -u main_fast.py --task task_b --train True --sweep False --batch_size 64 --num_epochs 1 --network_text FastText --network_image RESNET50 --margin 1 
+python -u main_fast.py --task task_b --train True --sweep False --batch_size 64 --num_epochs 1 --network_text BERT --network_image RESNET50 --margin 1 
+python -u main_fast.py --task task_a --train True --sweep False --batch_size 64 --num_epochs 5 --network_text FastText --network_image fasterRCNN --margin 1 
+python -u main_fast.py --task task_a --train True --sweep False --batch_size 64 --num_epochs 5 --network_text BERT --network_image fasterRCNN --margin 1 
+python -u main_fast.py --task task_b --train True --sweep False --batch_size 64 --num_epochs 1 --network_text FastText --network_image fasterRCNN --margin 1 
+python -u main_fast.py --task task_b --train True --sweep False --batch_size 64 --num_epochs 1 --network_text BERT --network_image fasterRCNN --margin 1 
+python -u main_fast.py --task task_a --train True --sweep False --batch_size 64 --num_epochs 5 --network_text FastText --network_image RESNET50 --margin 10 
+python -u main_fast.py --task task_a --train True --sweep False --batch_size 64 --num_epochs 5 --network_text BERT --network_image RESNET50 --margin 10 
+python -u main_fast.py --task task_b --train True --sweep False --batch_size 64 --num_epochs 1 --network_text FastText --network_image RESNET50 --margin 10 
+python -u main_fast.py --task task_b --train True --sweep False --batch_size 64 --num_epochs 1 --network_text BERT --network_image RESNET50 --margin 10 
+python -u main_fast.py --task task_a --train True --sweep False --batch_size 64 --num_epochs 5 --network_text FastText --network_image fasterRCNN --margin 10 
+python -u main_fast.py --task task_a --train True --sweep False --batch_size 64 --num_epochs 5 --network_text BERT --network_image fasterRCNN --margin 10 
+python -u main_fast.py --task task_b --train True --sweep False --batch_size 64 --num_epochs 1 --network_text FastText --network_image fasterRCNN --margin 10 
+python -u main_fast.py --task task_b --train True --sweep False --batch_size 64 --num_epochs 1 --network_text BERT --network_image fasterRCNN --margin 10 

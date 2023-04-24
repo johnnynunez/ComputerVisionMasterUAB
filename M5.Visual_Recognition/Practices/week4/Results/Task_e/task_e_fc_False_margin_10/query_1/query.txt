@@ -1,0 +1,1 @@
+Query Objects: person banana neighbor_0 Objects: person apple neighbor_1 Objects: banana person neighbor_2 Objects: donut chair person neighbor_3 Objects: person hot dog neighbor_4 Objects: banana person couch 
