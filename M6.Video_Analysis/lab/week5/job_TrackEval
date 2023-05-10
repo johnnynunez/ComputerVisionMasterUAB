@@ -1,0 +1,76 @@
+#!/bin/bash
+#SBATCH -n 10 # Number of cores
+#SBATCH --mem 60GB # 2GB solicitados.
+#SBATCH -p mhigh,mhigh # or mlow Partition to submit to master low prioriy queue
+#SBATCH --gres gpu:1 # Para pedir Pascales MAX 8
+#SBATCH -o %x_%u_%j.out # File to which STDOUT will be written
+#SBATCH -e %x_%u_%j.err # File to which STDERR will be written
+eval "$(conda shell.bash hook)"
+conda activate m6
+
+echo "Starting TrackEval for EndToEnd MTSC"
+
+echo "IOU S01"
+python TrackEval_ourMethods.py --seq S01  --input /ghome/group03/mcv-m6-2023-team6/week5/Results/trackings/MTSC/max_iou/input/S01 --output /ghome/group03/mcv-m6-2023-team6/week5/TrackEval/S01/data/trackers/mot_challenge/MOT17-train/MPNTrack/ --evaluated 0 
+python /ghome/group03/mcv-m6-2023-team6/week5/TrackEval/S01/scripts/run_mot_challenge.py --DO_PREPROC False --METRICS HOTA Identity
+python TrackEval_ourMethods.py --seq S01 --csv_name mtsc_IOU_s01.csv --input /ghome/group03/mcv-m6-2023-team6/week5/Results/trackings/MTSC/max_iou/input/S01 --output /ghome/group03/mcv-m6-2023-team6/week5/TrackEval/S01/data/trackers/mot_challenge/MOT17-train/MPNTrack/ --evaluated 1
+
+echo "IOU  S03"
+python TrackEval_ourMethods.py --seq S03 --input /ghome/group03/mcv-m6-2023-team6/week5/Results/trackings/MTSC/max_iou/input/S03 --output /ghome/group03/mcv-m6-2023-team6/week5/TrackEval/S03/data/trackers/mot_challenge/MOT17-train/MPNTrack/ --evaluated 0 
+python /ghome/group03/mcv-m6-2023-team6/week5/TrackEval/S03/scripts/run_mot_challenge.py --DO_PREPROC False --METRICS HOTA Identity
+python TrackEval_ourMethods.py --seq S03 --csv_name mtsc_IOU_s03.csv --input /ghome/group03/mcv-m6-2023-team6/week5/Results/trackings/MTSC/max_iou/input/S03 --output /ghome/group03/mcv-m6-2023-team6/week5/TrackEval/S03/data/trackers/mot_challenge/MOT17-train/MPNTrack/  --evaluated 1
+
+echo "IOU  S04"
+python TrackEval_ourMethods.py --seq S04  --input /ghome/group03/mcv-m6-2023-team6/week5/Results/trackings/MTSC/max_iou/input/S04 --output /ghome/group03/mcv-m6-2023-team6/week5/TrackEval/S04/data/trackers/mot_challenge/MOT17-train/MPNTrack/ --evaluated 0 
+python /ghome/group03/mcv-m6-2023-team6/week5/TrackEval/S04/scripts/run_mot_challenge.py --DO_PREPROC False --METRICS HOTA Identity
+python TrackEval_ourMethods.py --seq S04 --csv_name mtsc_IOU_s04.csv --input /ghome/group03/mcv-m6-2023-team6/week5/Results/trackings/MTSC/max_iou/input/S04 --output /ghome/group03/mcv-m6-2023-team6/week5/TrackEval/S04/data/trackers/mot_challenge/MOT17-train/MPNTrack/  --evaluated 1
+
+
+echo "OF S01"
+python TrackEval_ourMethods.py --seq S01  --input /ghome/group03/mcv-m6-2023-team6/week5/Results/trackings/MTSC/max_iou_OF/input/S01 --output /ghome/group03/mcv-m6-2023-team6/week5/TrackEval/S01/data/trackers/mot_challenge/MOT17-train/MPNTrack/ --evaluated 0 
+python /ghome/group03/mcv-m6-2023-team6/week5/TrackEval/S01/scripts/run_mot_challenge.py --DO_PREPROC False --METRICS HOTA Identity
+python TrackEval_ourMethods.py --seq S01 --csv_name mtsc_OF_s01.csv --input /ghome/group03/mcv-m6-2023-team6/week5/Results/trackings/MTSC/max_iou_OF/input/S01 --output /ghome/group03/mcv-m6-2023-team6/week5/TrackEval/S01/data/trackers/mot_challenge/MOT17-train/MPNTrack/ --evaluated 1
+
+echo "OF  S03"
+python TrackEval_ourMethods.py --seq S03 --input /ghome/group03/mcv-m6-2023-team6/week5/Results/trackings/MTSC/max_iou_OF/input/S03 --output /ghome/group03/mcv-m6-2023-team6/week5/TrackEval/S03/data/trackers/mot_challenge/MOT17-train/MPNTrack/ --evaluated 0 
+python /ghome/group03/mcv-m6-2023-team6/week5/TrackEval/S03/scripts/run_mot_challenge.py --DO_PREPROC False --METRICS HOTA Identity
+python TrackEval_ourMethods.py --seq S03 --csv_name mtsc_OF_s03.csv --input /ghome/group03/mcv-m6-2023-team6/week5/Results/trackings/MTSC/max_iou_OF/input/S03 --output /ghome/group03/mcv-m6-2023-team6/week5/TrackEval/S03/data/trackers/mot_challenge/MOT17-train/MPNTrack/  --evaluated 1
+
+echo "OF  S04"
+python TrackEval_ourMethods.py --seq S04  --input /ghome/group03/mcv-m6-2023-team6/week5/Results/trackings/MTSC/max_iou_OF/input/S04 --output /ghome/group03/mcv-m6-2023-team6/week5/TrackEval/S04/data/trackers/mot_challenge/MOT17-train/MPNTrack/ --evaluated 0 
+python /ghome/group03/mcv-m6-2023-team6/week5/TrackEval/S04/scripts/run_mot_challenge.py --DO_PREPROC False --METRICS HOTA Identity
+python TrackEval_ourMethods.py --seq S04 --csv_name mtsc_OF_s04.csv --input /ghome/group03/mcv-m6-2023-team6/week5/Results/trackings/MTSC/max_iou_OF/input/S04 --output /ghome/group03/mcv-m6-2023-team6/week5/TrackEval/S04/data/trackers/mot_challenge/MOT17-train/MPNTrack/  --evaluated 1
+
+
+echo "BYTE TRACK S01"
+python TrackEval.py --seq S01 --endToEnd 1 --input /ghome/group03/mcv-m6-2023-team6/week5/Results/end2end/byTrack/AI_city_s01_ByTrack/ --output /ghome/group03/mcv-m6-2023-team6/week5/TrackEval/S01/data/trackers/mot_challenge/MOT17-train/MPNTrack/ --MTMC 0 --evaluated 0 
+python /ghome/group03/mcv-m6-2023-team6/week5/TrackEval/S01/scripts/run_mot_challenge.py --DO_PREPROC False --METRICS HOTA Identity
+python TrackEval.py --seq S01 --endToEnd 1 --csv_name mtsc_byTrack_s01.csv --input /ghome/group03/mcv-m6-2023-team6/week5/Results/end2end/byTrack/AI_city_s01_ByTrack/ --output /ghome/group03/mcv-m6-2023-team6/week5/TrackEval/S01/data/trackers/mot_challenge/MOT17-train/MPNTrack/ --evaluated 1
+
+echo "BYTE TRACK S03"
+python TrackEval.py --seq S03 --endToEnd 1 --input /ghome/group03/mcv-m6-2023-team6/week5/Results/end2end/byTrack/AI_city_s03_ByTrack/ --output /ghome/group03/mcv-m6-2023-team6/week5/TrackEval/S03/data/trackers/mot_challenge/MOT17-train/MPNTrack/ --MTMC 0 --evaluated 0 
+python /ghome/group03/mcv-m6-2023-team6/week5/TrackEval/S03/scripts/run_mot_challenge.py --DO_PREPROC False --METRICS HOTA Identity
+python TrackEval.py --seq S03 --endToEnd 1 --csv_name mtsc_byTrack_s03.csv --input /ghome/group03/mcv-m6-2023-team6/week5/Results/end2end/byTrack/AI_city_s03_ByTrack/ --output /ghome/group03/mcv-m6-2023-team6/week5/TrackEval/S03/data/trackers/mot_challenge/MOT17-train/MPNTrack/  --evaluated 1
+
+echo "BYTE TRACK S04"
+python TrackEval.py --seq S04 --endToEnd 1 --input /ghome/group03/mcv-m6-2023-team6/week5/Results/end2end/byTrack/AI_city_s04_ByTrack/ --output /ghome/group03/mcv-m6-2023-team6/week5/TrackEval/S04/data/trackers/mot_challenge/MOT17-train/MPNTrack/ --MTMC 0 --evaluated 0 
+python /ghome/group03/mcv-m6-2023-team6/week5/TrackEval/S04/scripts/run_mot_challenge.py --DO_PREPROC False --METRICS HOTA Identity
+python TrackEval.py --seq S04 --endToEnd 1 --csv_name mtsc_byTrack_s04.csv --input /ghome/group03/mcv-m6-2023-team6/week5/Results/end2end/byTrack/AI_city_s04_ByTrack/ --output /ghome/group03/mcv-m6-2023-team6/week5/TrackEval/S04/data/trackers/mot_challenge/MOT17-train/MPNTrack/  --evaluated 1
+
+echo "BY DEEPSORT S01"
+python TrackEval.py --seq S01 --endToEnd 1 --input /ghome/group03/mcv-m6-2023-team6/week5/Results/end2end/deepSort/AI_city_s01_DeepSort/ --output /ghome/group03/mcv-m6-2023-team6/week5/TrackEval/S01/data/trackers/mot_challenge/MOT17-train/MPNTrack/ --MTMC 0 --evaluated 0 
+python /ghome/group03/mcv-m6-2023-team6/week5/TrackEval/S01/scripts/run_mot_challenge.py --DO_PREPROC False --METRICS HOTA Identity
+python TrackEval.py --seq S01 --endToEnd 1 --csv_name mtsc_DeepSort_s01.csv --input /ghome/group03/mcv-m6-2023-team6/week5/Results/end2end/deepSort/AI_city_s01_DeepSort/ --output /ghome/group03/mcv-m6-2023-team6/week5/TrackEval/S01/data/trackers/mot_challenge/MOT17-train/MPNTrack/ --evaluated 1
+
+echo "BY DEEPSORT S03"
+python TrackEval.py --seq S03 --endToEnd 1 --input /ghome/group03/mcv-m6-2023-team6/week5/Results/end2end/deepSort/AI_city_s03_DeepSort/ --output /ghome/group03/mcv-m6-2023-team6/week5/TrackEval/S03/data/trackers/mot_challenge/MOT17-train/MPNTrack/ --MTMC 0 --evaluated 0 
+python /ghome/group03/mcv-m6-2023-team6/week5/TrackEval/S03/scripts/run_mot_challenge.py --DO_PREPROC False --METRICS HOTA Identity
+python TrackEval.py --seq S03 --endToEnd 1 --csv_name mtsc_DeepSort_s03.csv --input /ghome/group03/mcv-m6-2023-team6/week5/Results/end2end/deepSort/AI_city_s03_DeepSort/ --output /ghome/group03/mcv-m6-2023-team6/week5/TrackEval/S03/data/trackers/mot_challenge/MOT17-train/MPNTrack/  --evaluated 1
+
+echo "BY DEEPSORT S04"
+python TrackEval.py --seq S04 --endToEnd 1 --input /ghome/group03/mcv-m6-2023-team6/week5/Results/end2end/deepSort/AI_city_s04_DeepSort/ --output /ghome/group03/mcv-m6-2023-team6/week5/TrackEval/S04/data/trackers/mot_challenge/MOT17-train/MPNTrack/ --MTMC 0 --evaluated 0 
+python /ghome/group03/mcv-m6-2023-team6/week5/TrackEval/S04/scripts/run_mot_challenge.py --DO_PREPROC False --METRICS HOTA Identity
+python TrackEval.py --seq S04 --endToEnd 1 --csv_name mtsc_DeepSort_s04.csv --input /ghome/group03/mcv-m6-2023-team6/week5/Results/end2end/deepSort/AI_city_s04_DeepSort/ --output /ghome/group03/mcv-m6-2023-team6/week5/TrackEval/S04/data/trackers/mot_challenge/MOT17-train/MPNTrack/  --evaluated 1
+
+
+

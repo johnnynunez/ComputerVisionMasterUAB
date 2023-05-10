@@ -1,0 +1,34 @@
+graphviz
+ipywidgets
+jupyterlab
+matplotlib
+notebook
+numexpr
+opencv-contrib-python>=4.7.0.72
+scikit-image
+optuna
+cython
+cython_bbox
+
+
+# --------- python --------- #
+pandas
+# neptune-client
+# mlflow
+# comet-ml
+
+# --------- others --------- #
+pre-commit      # hooks for applying linters on commit
+pytest          # tests
+pyyaml
+rich            # beautiful text formatting in terminal
+# --------- pytorch --------- #
+torch>=2.0.0
+torchinfo
+torchvision>=0.15.1
+tqdm
+# --------- loggers --------- #
+wandb
+# sh            # for running bash commands in some tests (linux/macos only)
+# nvitop          # for monitoring GPU usage
+# asitop          # for macOS monitoring GPU usage

@@ -1,0 +1,11 @@
+run_name: 'week2'
+run_mode: 'Gaussian'
+paths:
+  # annotations_path: 'dataset/ai_challenge_s03_c010-full_annotation.xml'
+  # video_path: '../dataset/AICity_data/train/S03/c010/vdo.avi'
+  # ai_gt_path: 'dataset/AICity_data/train/S03/c010/gt/gt.txt'
+  # save_path: './Results/'
+  annotations_path: '../../dataset/ai_challenge_s03_c010-full_annotation.xml'
+  video_path: '../../dataset/AICity_data/train/S03/c010/vdo.avi'
+  ai_gt_path: '../../dataset/AICity_data/train/S03/c010/gt/gt.txt'
+  save_path: './Results/'

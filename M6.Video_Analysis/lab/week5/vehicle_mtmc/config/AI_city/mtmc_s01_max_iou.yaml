@@ -1,0 +1,21 @@
+OUTPUT_DIR: "/ghome/group03/mcv-m6-2023-team6/week5/Results/from_our_trackers/max_iou/AI_city_s01_maxiou"
+MTMC:
+  CAMERA_LAYOUT: 'config/AI_city/s01_camera_layout.txt'
+  PICKLED_TRACKLETS:
+    - "/ghome/group03/mcv-m6-2023-team6/week5/Results/trackings/MTSC/max_iou/mot/S01/mot_features_c001.pkl"
+    - "/ghome/group03/mcv-m6-2023-team6/week5/Results/trackings/MTSC/max_iou/mot/S01/mot_features_c002.pkl"
+    - "/ghome/group03/mcv-m6-2023-team6/week5/Results/trackings/MTSC/max_iou/mot/S01/mot_features_c003.pkl"
+    - "/ghome/group03/mcv-m6-2023-team6/week5/Results/trackings/MTSC/max_iou/mot/S01/mot_features_c004.pkl"
+    - "/ghome/group03/mcv-m6-2023-team6/week5/Results/trackings/MTSC/max_iou/mot/S01/mot_features_c005.pkl"
+  LINKAGE: 'mean_feature'
+  MIN_SIM: 0.5
+EVAL:
+  MIN_IOU: 0.5
+  IGNORE_FP: true
+  DROP_SINGLE_CAM: false
+  GROUND_TRUTHS:
+    - "/export/home/group03/dataset/aic19-track1-mtmc-train/train/S01/c001/gt/gt.txt"
+    - "/export/home/group03/dataset/aic19-track1-mtmc-train/train/S01/c002/gt/gt.txt"
+    - "/export/home/group03/dataset/aic19-track1-mtmc-train/train/S01/c003/gt/gt.txt"
+    - "/export/home/group03/dataset/aic19-track1-mtmc-train/train/S01/c004/gt/gt.txt"
+    - "/export/home/group03/dataset/aic19-track1-mtmc-train/train/S01/c005/gt/gt.txt"

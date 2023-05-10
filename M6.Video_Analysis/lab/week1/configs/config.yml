@@ -1,0 +1,17 @@
+run_name: 'week1'
+run_mode: 'rcnn'
+paths:
+  annotations_path: '../dataset/ai_challenge_s03_c010-full_annotation.xml'
+  video_path: '../dataset/AICity_data/train/S03/c010/vdo.avi'
+  ai_gt_path: '../dataset/AICity_data/train/S03/c010/gt/gt.txt'
+detections:
+  rcnn: '../dataset/AICity_data/train/S03/c010/det/det_mask_rcnn.txt'
+  ssd: '../dataset/AICity_data/train/S03/c010/det/det_ssd512.txt'
+  yolo: '../dataset/AICity_data/train/S03/c010/det/det_yolo3.txt'
+
+noisy_values:
+  del_prob: 0.1
+  gen_prob: 0.1
+  mean: 0
+  std: 10
+  frame_shape: [ 1080, 1920 ]
